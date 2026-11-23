@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Generator Tamu · Walimatul Khitan Faariz",
+  "short_name": "Generator Tamu",
+  "description": "Generator link undangan personal untuk daftar tamu Walimatul Khitan Faariz.",
+  "lang": "id-ID",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone"],
+  "background_color": "#092722",
+  "theme_color": "#092722",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {"src": "icons/generator-pwa-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/generator-pwa-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+  ]
+}
