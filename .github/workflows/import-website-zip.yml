@@ -1,0 +1,46 @@
+name: Import invitation website ZIP
+
+on:
+  push:
+    paths:
+      - "incoming/undangan-faariz-project-extracted.zip"
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract website files
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="incoming/undangan-faariz-project-extracted.zip"
+          test -f "$archive"
+          mkdir -p /tmp/site
+          unzip -q "$archive" -d /tmp/site
+          # Refuse archive entries that could write outside the extraction directory.
+          if find /tmp/site -type l | grep -q .; then
+            echo "Symlinks are not allowed in the uploaded archive."
+            exit 1
+          fi
+          cp -a /tmp/site/. .
+          rm -f "$archive"
+          rmdir incoming 2>/dev/null || true
+
+      - name: Commit imported site
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No website changes to commit."
+            exit 0
+          fi
+          git commit -m "Import complete Walimatul Khitan website"
+          git push
