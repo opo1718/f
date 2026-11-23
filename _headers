@@ -1,0 +1,23 @@
+/
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/sw.js
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/manifest.webmanifest
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/generator/
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/generator/index.html
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/generator/sw.js
+  Cache-Control: no-cache, max-age=0, must-revalidate
+
+/generator/manifest.webmanifest
+  Cache-Control: no-cache, max-age=0, must-revalidate
