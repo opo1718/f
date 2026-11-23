@@ -23,13 +23,12 @@ jobs:
           test -f "$archive"
           mkdir -p /tmp/site
           unzip -q "$archive" -d /tmp/site
-          # Refuse archive entries that could write outside the extraction directory.
           if find /tmp/site -type l | grep -q .; then
             echo "Symlinks are not allowed in the uploaded archive."
             exit 1
           fi
           cp -a /tmp/site/. .
-          rm -f "$archive"
+          rm -f "$archive" incoming/.gitkeep
           rmdir incoming 2>/dev/null || true
 
       - name: Commit imported site
