@@ -14,8 +14,23 @@
   "theme_color": "#092722",
   "categories": ["lifestyle", "events"],
   "icons": [
-    {"src": "assets/icons/faariz-pwa-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "assets/icons/faariz-pwa-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
-    {"src": "assets/icons/faariz-pwa-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "assets/icons/faariz-pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/faariz-pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/faariz-pwa-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }
