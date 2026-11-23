@@ -1,0 +1,21 @@
+{
+  "id": "./",
+  "name": "Walimatul Khitan · Muhammad Faariz Al-Khowarizmi",
+  "short_name": "Undangan Faariz",
+  "description": "Undangan digital Walimatul Khitan Muhammad Faariz Al-Khowarizmi.",
+  "lang": "id-ID",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone"],
+  "orientation": "portrait-primary",
+  "background_color": "#092722",
+  "theme_color": "#092722",
+  "categories": ["lifestyle", "events"],
+  "icons": [
+    {"src": "assets/icons/faariz-pwa-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/faariz-pwa-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/icons/faariz-pwa-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
